@@ -1,0 +1,261 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+header {
+    width: calc(100% - 400px); /* Ajuste a largura para considerar as margens maiores */
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 200px; /* Aumente a margem esquerda */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    z-index: 1000;
+    background: transparent;
+    border-bottom: 1px solid white;
+    background: rgb(0, 0, 0);
+}
+
+header .right-menu {
+    display: flex;
+    align-items: center;
+}
+
+header .right-menu span {
+    margin-left: 20px;
+    white-space: nowrap;
+    color: white;
+}
+
+.name {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+}
+
+/*MAIN*/
+main {
+    padding-top: 90px; /* Adiciona espaço suficiente para o header */
+    flex: 1;
+    width: calc(100% - 400px); /* Ajuste a largura para considerar as margens maiores */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    background: rgb(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome, .projetos {
+    font-family: "Kanit", sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.textWelcome {
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.M_anotacoes {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .M_anotacoes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.anotacoes {
+    font-family: "Kanit", sans-serif;
+    font-size: 50px;
+    text-align: left;
+    grid-column: 1 / -1;
+    margin-top: 35px;
+    color: white;
+}
+
+.automacao, .desenvolvimento, .banco, .linguagem, .ciencia, .tittleTecnico, .tittleFaculdade, .tittleEstagio{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 25px; 
+    text-align: center;
+    color: white;
+}
+
+
+
+.A_automacao, .A_desenvolvimento, .A_banco, .A_linguagem, .A_ciencia{
+    line-height: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    line-height: 30px;
+}
+
+
+.projetos {
+    margin-top: 10px; /* Mantenha a margem superior existente */
+    margin-bottom: 30px; /* Adicione uma margem inferior menor */
+}
+
+.Box {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 250px;
+    text-align: center;
+}
+
+/* Formação */
+.formacao {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tittleFormacao {
+    font-family: "Kanit", sans-serif;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+.event {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;
+    position: relative;
+}
+
+.event:first-child::before,
+.event:last-child::before {
+    display: none;
+}
+
+.tittleTecnico, .tittleFaculdade, .tittleEstagio {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.textTecnico, .textFaculdade, .textEstagio {
+    font-size: 18px;
+    color: white;
+}
+
+.timeline .event {
+    flex: 1;
+    height: 150px; /* Ajuste para garantir que todos os eventos tenham a mesma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Footer*/
+#footer {
+    width: calc(100% - 400px); /* Ajuste a largura para considerar as margens maiores */
+    height: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    z-index: 1000;
+    background: rgb(0, 0, 0);
+    border-top: 1px solid white;
+    margin-top: 50px;
+    padding: 0 200px; /* Aumente o padding para refletir as margens maiores */
+    opacity: 0;
+    transition: 0.3s ease;
+    padding-top:25px;
+}
+
+body.no-scroll {
+    margin-bottom: 20px;
+}
+
+footer .F_left, .F_right {
+    display: flex;
+    align-items: center;
+}
+
+footer .F_right a {
+    margin-left: 20px;
+    white-space: nowrap;
+    color: white;
+}
+
+.F_name {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 17px;
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+/* Animações, etc */
+header .right-menu:hover {
+    color: aqua;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}

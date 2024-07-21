@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados</title>
+    <link rel="stylesheet" href="banco.css">
+    <script src="banco.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span class="name">Banco de Dados</span>
+        <div class="right-menu">
+            <div class="H_home">
+                <span class="home"><a href="facul.html" style="color: white; text-decoration-thickness: 1px;">home</a></span>
+            </div>
+            <div class="H_notes">
+                <span class="notes"><a href="#anotation" style="color: white; text-decoration-thickness: 1px;">anotações</a></span>
+            </div>
+            <div class="H_exercice">
+                <span class="exercicies"><a href="#M_exercicie" style="color: white; text-decoration-thickness: 1px;">exercícios</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="anotation" class="M_anotation">
+            <div class="Anotation">
+                <br><a><span class="Anotation">Anotações</span></a></br>
+                <br><a><span class="textBan">O banco de dados é um conjunto organizado de informações/dados, geralmente armazenadas em um sistema de computador e controladas por um sistema de gerenciamento de banco de dados. Tive dificuldades durante esta matéria principalmente ao realizar diagrama entidade-relacionamento, porém gostei da parte de programação, apesar de ter muitos comandos para lembrar.</span></a></br>
+                <div class="Software">
+                    <br><a><span class="tittleSoftware">Programação:</span></a></br>
+                    <br><a><span class="textSoftware">Toda a programação foi feita utilizando a linguagem SQL (Structured Query Language) e usando o software PostgreSQL.</span></a></br>
+                    <br><a href="https://github.com/ZKNs1/ADS_BdD" target=”_blank”><span class="textGitHub">Clique aqui para acessar o repositório no GitHub</span></a></br>
+                </div>
+            </div>
+
+            <div class="DataModeling">
+	            <br><a><span class="tittleDataModeling">Modelagem de Dados</span></a></br>
+                <div class="TextRight">
+                    <div class="DiagramER">
+                        <br><a><span class="tittleDiagramER">Modelo Entidade-Relacionamento</span></a>
+                        <div class="TextRight">
+                            <br> <a><span class="textDiagramER">Representação visual de um banco de dados utilizando diagramas.</span></a>
+                            <div class="Components">
+                                <br>
+                                <a><span class="tittleComponents">Componentes</span></a>
+                                <div class="textComponents">
+                                    <ul>
+                                        <li>Entidades;
+                                            <ul>
+                                                <li>Representam objetos ou conceitos do mundo real com existência independente;</li>
+                                            </ul>
+                                        </li>
+                                        <li>Atributos;
+                                            <ul>
+                                                <li>Características das entidades;</li>
+                                            </ul>
+                                        </li>
+                                        <li>Relacionamentos;
+                                            <ul>
+                                                <li>Definem como as entidades estão associadas entre si.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <br><a><span class="tittleDiagramEx">Exemplo de diagrama</span></a>
+                                <div class="image-container">
+                                    <img src="Fotos/DiagramER.png" alt="Diagrama ER">
+                                    <div class="textDiagramEx">
+                                        <div class="TextRight">
+                                            <ul>
+                                                <li>Entidades:
+                                                    <ul>
+                                                        <li>Cursos;</li>
+                                                        <li>Alunos.</li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>Atributos:
+                                                    <ul>
+                                                        <li>Cursos:
+                                                            <ul>
+                                                                <li>ID_Curso;</li>
+                                                                <li>Nome_Curso.</li>
+                                                            </ul>
+                                                        </li>
+                                                    
+                                                        <li>Alunos:
+                                                            <ul>
+                                                                <li>Id_Aluno;</li>
+                                                                <li>Dt. nasc;</li>
+                                                                <li>Nome.</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                    <li>Relacionamentos:
+                                                    <ul>
+                                                        <li>Turmas.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="Data">
+                        <br><a><span class="tittleData">Dados</span></a></br>
+                        <div class="image-container">
+                            <span class="IMGdados"><img src="Fotos/Bancodados.png"  alt="Dados"></span>
+                        </div>
+                    </div>
+        
+                    <div class="TextRight">
+                        <div class="StructuredData">
+	                        <br><a><span class="tittleStructuredData">Dados estruturados</span></a></br>
+                            <div class="TextRight">
+	                            <br><a><span class="textStructuredData"><li>Dados organizados em um formato fixo, facilita pesquisa, fácil de extrair informação.</li></span></a></br>
+                            </div>
+                        </div>
+
+                        <div class="UnstructuredData">
+                            <br><a><span class="tittleUnstructuredData">Dados não estruturados</span></a></br>
+
+                            <div class="TextRight">
+	                            <br><a><span class="textUnstructuredData"><li>Dados não organizados ou não têm um formato predefinido, difícil extração.</li></span></a></br>
+                            </div>
+                        </div>
+
+                        <div class="SemiStructuredData">
+                            <br><a><span class="tittleSemiStructuredData">Dados semi estruturados</span></a></br>
+                            <div class="TextRight">
+	                            <br><a><span class="textSemiStructuredData"><li>Dados que não são organizados em tabelas, mas possuem tags ou marcadores para identificar os elementos.</li></span></a></br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="BusinessModeling">
+                        <br><a><span class="tittleBusinessModeling">Modelo de negócios</span></a></br>
+                        <div class="TextRight">
+                            <div class="textBusinessModeling">
+                                <ul>
+                                    <li>Empresas - Cliente;</li>
+                                    <li>Dados necessários;
+                                        <ul>
+                                            <li>Funcionário: nome, departamento, cpf;</li>
+                                            <li>Departamento: nome, código do departamento.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Regras de negócio;
+                                        <ul>
+                                            <li>Um funcionário só pode pertencer a um departamento;</li>
+                                            <li>Um departamento pode ter vários funcionários.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="TextRight">
+                <div class="ConceptualModel">
+                    <br><a><span class="tittleConceptualModel">Modelo conceitual</span></a></br>
+                    <br><a><span class="textConceptualModel">
+                        <ul>
+                            <li>Regras
+                                <ul>
+                                    <li>Em um relacionamento com cardinalidade 1:1 - 1:N, a chave estrangeira deve ficar sempre no lado “N”;</li>
+                                    <li>Em um relacionamento com cardinalidade 1:N-1:N, o relacionamento se torna uma entidade que irá conter ambas FK.</li>
+                                </ul>
+                            </li>
+                            <li>Diagrama Entidade Relacionamento (DER);</li>
+                            <li>Todo conjunto de dados é uma entidade;</li>
+                            <li>Entidade é representada por um retângulo;</li>
+                            <li>Código dentro da entidade é chamada de *Primary Key (PK)*, ele precisa ser unique (único) e not null (não estar vazio);</li>
+                            <li>Chave candidata: segunda opção do código,</li>
+                        
+                        </ul>
+                    </span></a></br>
+                </div>
+            </div>
+        </div>
+
+        <div class="Command">
+            <br><a><span class="tittleCommand">Comandos:<br></span></a>
+        
+            <button type="button" class="commandDDL">DDL</button>
+            <div class="contentDDL">
+                <ul>
+                    Linguagem de definição de dados
+                    <li><g>Create</g></li>
+                    <li><g>Drop</g></li>
+                    <li><g>Alter</g></li>
+                </ul>
+            </div>
+
+            <button type="button" class="commandDML">DML</button>
+            <div class="contentDML">
+                <ul>
+                    Linguagem de manipulação de dados
+                    <li><g>Insert</g></li>
+                    <li><g>Update</g></li>
+                    <li><g>Delet</g></li>
+                </ul>
+            </div>
+
+            <button type="button" class="commandDQL">DQL</button>
+            <div class="contentDQL">
+                <ul>
+                    Linguagem de consulta de dados
+                    <li><g>SELECT * FROM table1</g> // Visualizar a tabela</li>
+                    <li><g>SELECT name, date FROM table1</g> // Selecionar colunas específicas</li>
+                </ul>
+            </div>
+        </div>  
+        
+        <div id="M_exercicie" class="M_exercicies">
+            <div class="Exercicie">
+                <br><a><span class="exercicie">Exercícios</span></a></br>
+            </div>
+
+            <div class="EX1">
+                <div class="TextRight">
+                    <br><a><span class="tittleEX1">Sistema de atendimento</span></a></br>
+
+                    <div class="TextRight">
+                        <div class="DQL">
+                            <span class="tittleDDL">Comandos DQL</span>
+                            <div class="code-container">
+                                <pre><code>
+CREATE TABLE paciente (
+    IDpaciente SERIAL PRIMARY KEY NOT NULL UNIQUE,
+    nomePac TEXT NOT NULL,
+    dataNasc DATE NOT NULL
+);
+
+CREATE TABLE medico (
+    IDmedico SERIAL PRIMARY KEY NOT NULL UNIQUE,
+    nomeMed	TEXT NOT NULL,
+    especializacao TEXT NOT NULL
+);
+
+CREATE TABLE registroMedico(
+    CONSTRAINT fk_IDpaciente FOREIGN KEY (IDpaciente) REFERENCES paciente(IDpaciente),
+    IDpaciente SERIAL,
+    CONSTRAINT fk_IDmedico FOREIGN KEY (IDmedico) REFERENCES medico(IDmedico),
+    IDmedico INT	
+);
+                                </code></pre>
+                            </div>
+                        </div>
+
+                        <div class="DML">
+                            <span class="tittleDML">Comandos DML</span>
+                            <div class="code-container">
+                                <pre><code>
+INSERT INTO paciente (nomePac, dataNasc) VALUES
+('gabi', '1992/11/25'),
+('triz_pariz', '2006/01/25'),
+('cellbit', '1997/12/20'),
+('alanzoka', '1995/12/15'),
+('calango', '1991/07/05'),
+('bruninhozor', '1993/09/08'),
+('nyvi', '1991/06/27'),
+('loud_thurzin', '1999/10/11'),
+('jovirone', '1991/09/28'),
+('yoDa', '1992/10/10');
+
+INSERT INTO medico (nomeMed, especializacao) VALUES
+('Dr. Meredith Grey', 'Cirurgia Geral'),
+('Dr. Gregory House', 'Diagnóstico Diferencial'),
+('Dr. Derek Shepherd', 'Neurocirurgia'),
+('Dr. Miranda Bailey', 'Cirurgia Geral'),
+('Dr. Mindy Lahiri', 'Ginecologia e Obstetrícia'),
+('Dr. Arizona Robbins', 'Cirurgia Pediátrica'),
+('Dr. Cristina Yang', 'Cirurgia Cardíaca'),
+('Dr. Alex Karev', 'Cirurgia Pediátrica'),
+('Dr. Sheldon Cooper', 'Física Teórica'),
+('Dr. Leonard Hofstadter', 'Física Experimental');
+
+INSERT INTO registroMedico (IDmedico) VALUES
+(1),
+(2),
+(3),
+(4),
+(5),
+(6),
+(7),
+(8),
+(9),
+(10);
+                                </pre></code>
+                            </div>
+                        </div>
+
+                        <div class="DQL">
+                            <span class="tittleDDL">Comandos DQL</span>
+                            <div class="code-container">
+                                <pre><code>
+SELECT * FROM registroMedico
+                                </pre></code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="EX2">
+                    <br><a><span class="tittleEX2">Sistema de Compras</span></a></br>
+                
+                    <div class="TextRight">
+                        <div class="DQL">
+                            <span class="tittleDDL">Comandos DQL</span>
+                            <div class="code-container">
+                                <pre><code>
+    DROP TABLE product; 
+    DROP TABLE client CASCADE;
+
+    CREATE TABLE clients (
+        idclient SERIAL PRIMARY KEY,
+        cpf varchar(14),
+        firstname text,
+        lastname text,
+        address text
+    );
+
+    CREATE TABLE products (
+        idproduct SERIAL PRIMARY KEY,
+        idclient int,
+        CONSTRAINT fk_client FOREIGN KEY (idclient) REFERENCES clients (idclient),
+        productname varchar(50),
+        brand varchar(20),
+        category varchar(20),
+        discount numeric,
+        price numeric
+    );
+                                </code></pre>
+                            </div>
+                        </div>
+
+                        <div class="DML">
+                            <span class="tittleDML">Comandos DML</span>
+                            <div class="code-container">
+                                <pre><code>
+    INSERT INTO clients (cpf,firstname,lastname,address) VALUES
+    ('000.000.000-00','Rodrigo','Junior','Rua 00, 000, Bairro 0'),
+    ('111.111.111-11','Joao','Silva','Rua 01, 100, Bairro 1'),
+    ('222.222.222-22','Maria','Gomez','Rua 02, 200, Bairro 2'),
+    ('333.333.333-33','José','Andrade','Rua 03, 300, Bairro 3'),
+    ('444.444.444-44','Bruno','Silveira','Rua 04, 400, Bairro 4'),
+    ('555.555.555-55','Ana','Cabral','Rua 05, 500, Bairro 5'),
+    ('666.666.666-66','Lucia','Silva','Rua 06, 600, Bairro 6'),
+    ('777.777.777-77','Antonio','Mange','Rua 07, 700, Bairro 7'),
+    ('888.888.888-88','Nicolas','Silva','Rua 08, 800, Bairro 8'),
+    ('999.999.999-99','Sandra','Fourlan','Rua 09, 900, Bairro 9');
+
+    INSERT INTO products (idclient,productname,brand,category,discount,price) VALUES
+    (2,'Headset','jbl','eletronicos',0.1,195.89),
+    (1,'notebook','dell','eletronicos',0.12,3500.00),
+    (10,'cadeira gammer','dragon','imobiliario',0.0,1630.9),
+    (2,'mesa para computador','dragon','imobiliario',0.0,695.89),
+    (1,'mouse','dell','eletronicos',0.12,124.79),
+    (3,'prateleira',null,'imobiliario',0.0,80.9),
+    (5,'postit','faber castel','papelaria',0.02,5.29),
+    (8,'lapiseira','pentel','papelaria',0.02,18.9);
+                                </pre></code>
+                            </div>
+                        </div>
+
+                        <div class="DQL">
+                            <span class="tittleDDL">Comandos DQL</span>
+                            <div class="code-container">
+                                <pre><code>
+    --Visualizar a tabela de clients
+    SELECT * FROM clients
+
+    --Selecionar colunas específicas 
+    SELECT firstname, lastname FROM clients
+
+    SELECT * FROM products
+    SELECT productname, price, price-price*discount FROM products
+
+    --Exibe valor sem repetição
+    SELECT DISTINCT brand FROM products
+
+    --Calculadora
+    SELECT 11%3
+
+    --Funções
+    SELECT random()
+
+    --SELECT com clausula WHERE
+
+    --Operadores de comparação <,>,>=,<=,=,<> ou !=
+    --Exibir produtos com valor acima de 100 reais
+    SELECT productname, price FROM products
+    WHERE price >= 100
+
+    --Operadores lógicos: AND, OR e NOT
+    --Produtos entre 100 e 800 reais
+    SELECT productname, price FROM products
+    WHERE price >= 100 AND price <= 800
+    --alternativa
+    SELECT productname, price FROM products
+    WHERE price BETWEEN 100 AND 800
+
+    --Produtos cujo preço esteja abaixo de 100 e acima de 800
+    SELECT productname, price FROM products
+    WHERE price <= 100 OR price >= 800
+
+    --Listar todos os produtos da marca dell
+    SELECT productname, brand FROM products
+    WHERE brand = 'dell'
+
+    --Listar todos os produtos com o dados (ID) de João
+    SELECT productname, idclient FROM products
+    WHERE idclient = 2
+
+    --Listar todos os produtos com o dados (nome) de João
+    SELECT productname FROM products
+    WHERE idclient = (SELECT idcleitn FROM clients
+    				 WHERE firstname = 'Joao')
+                    
+                    
+    --Listar os clientes com ID par
+    SELECT idclient FROM clients
+    WHERE idclient % 2 = 0
+
+    --COUNT
+    --quantos produtos foram vendidos no total
+    SELECT COUNT (idproduct) FROM products
+
+    --Função avg (média)
+    --Qual o preço médio dos produtos vendidos?
+    SELECT AVG(price) FROM products
+
+    --Função max (máximo)
+    --Qual o preço mais alto negociado?
+    SELECT MAX(price) FROM products
+
+    --Função min (mínimo)
+    --Qual o preço mais baixo negociado?
+    SELECT MIN(price) FROM products
+
+    --Função sum (soma)
+    --Qual o valor total vendido?
+    SELECT SUM(price) FROM products
+
+    --ORDER BY / DESC
+    SELECT * FROM clients
+    ORDER BY firstname
+
+    -- Exercícios:
+
+    -- 1. Quantos produtos da marca dell foram vendidos?
+    -- 2. Quantos produtos João comprou?
+    -- 3. Qual o preço médio dos produtos da dell?
+    -- 4. Qual o produto mais caro vendido?
+    -- 5. Qual o produto mais barato vendido?
+    -- 6. Qual o valor total de equipamentos dell vendidos?
+    -- 7. Quanto Rodrigo já gastou no eCommerce?
+    -- 8. Exiba todos os produtos da catergoria eletronicos ordenados do mais barato para o mais caro.
+    -- 9. Exiba todos os produtos comprados por Rodrigo ordenados do mais caro para o mais barato.
+
+    --1
+    SELECT COUNT (productname) FROM products
+    WHERE brand = 'dell'
+
+    --2
+    SELECT COUNT (productname) FROM products
+    WHERE idclient = (SELECT idclient FROM clients
+    				 WHERE firstname = 'Joao')
+                    
+    --3
+    SELECT AVG(price) FROM products
+    WHERE brand = 'dell'
+
+    --4
+    SELECT MAX(price) FROM products
+
+    --5
+    SELECT MIN(price) FROM products
+
+    --6
+    SELECT SUM(price) FROM products
+    WHERE brand = 'dell'
+
+    --7
+    SELECT SUM(price) FROM products
+    WHERE idclient = (SELECT idclient FROM clients
+    				 WHERE firstname = 'Rodrigo')
+                    
+    --8
+    SELECT category, price FROM products
+    WHERE category = 'eletronicos'
+    ORDER BY price
+
+    --9
+    SELECT productname, price FROM products
+    WHERE idclient = (SELECT idclient FROM clients
+    				 WHERE firstname = 'Rodrigo')
+    ORDER BY price DESC
+    ```
+                                </pre></code>
+                            </div>
+                        </div>
+
+                        <div class="CrossJoin">
+                            <span class="tittleCrossJoin">Comandos Cross Join</span>
+                            <div class="code-container">  
+                                <pre><code>
+SELECT * FROM clients,products --Cliente vai aparecer primeiro
+SELECT * FROM products,clients --Produto vai aparecer primeiro
+SELECT * FROM clients CROSS JOIN products --Forma alternativa
+
+-- Inner Join (relaciona por PK/FK)
+-- Mostra todas as colunas
+SELECT * FROM clients INNER JOIN products
+ON clients.idclient = products.idclient --Nome da tabela.nome da coluna
+
+-- Mostra as colunas específicas (firstname e productname)
+SELECT firstname,productname FROM clients INNER JOIN products
+ON clients.idclient = products.idclient
+
+-- Buscar só de um cliente
+SELECT firstname,productname FROM clients INNER JOIN products
+ON clients.idclient = products.idclient
+WHERE firstname = 'Rodrigo' OR firstname ='rodrigo'
+
+--Comandos alternativos
+SELECT * FROM clients INNER JOIN products USING (idclient)
+
+SELECT * FROM clients NATURAL INNER JOIN products--Entende que vai usar PK/FK
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="F_left">
+            <span class="F_name">Melina Nogueira    2024 ©</span>
+        </div>
+        <div class="F_right">
+            <span class="git"><a href="https://github.com/ZKNs1" target=”_blank”>
+                <img src="github.png" style="width:40px; height:40px;" alt="GitHub">
+            </a></span>
+
+            <span class="linkedin"><a href="https://www.linkedin.com/in/melina-nogueira-844878273/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target=”_blank”>
+                <img src="linkedin.png" style="width:40px; height:40px;" alt="LinkedIn">
+            </a></span>
+        </div>
+    </footer>

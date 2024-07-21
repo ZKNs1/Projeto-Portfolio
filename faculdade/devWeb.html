@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Web</title>
+    <link rel="stylesheet" href="devWeb.css">
+    <script src="devWeb.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="name">Desenvolvimento Web</span>
+        <div class="right-menu">
+            <div class="H_home">
+                <span class="home"><a href="facul.html" style="color: white; text-decoration-thickness: 1px;">home</a></span>
+            </div>
+            <div class="H_notes">
+                <span class="notes"><a href="#anotation" style="color: white; text-decoration-thickness: 1px;">anotações</a></span>
+            </div>
+            <div class="H_exercice">
+                <span class="exercicies"><a href="#M_exercicie" style="color: white; text-decoration-thickness: 1px;">exercícios</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="anotation" class="M_anotation">
+            <div class="Anotation">
+                <br><a><span class="anotation">Anotações</span></a></br>
+                <br><a><span class="textDev">Durante este semestre aprendi muitos conceitos do Desenvolvimento Web, além de ter aprendido a trabalhar com HTML, CSS e JavaScript. Esta matéria foi bem desafiadora para mim, pois nunca havia estudado ou trabalhado com Front-end, então tudo foi um aprendizado novo, e apesar das dificuldades, esta matéria me ajudou a me animar com a programação, de poder ver meu trabalho funcionando.</span></a></br>
+				<div class="Software">
+                    <br><a><span class="tittleSoftware">Programação:</span></a></br>
+                    <br><a><span class="textSoftware">A programação é feita utilizando as linguagens HTMl, CSS e JavaScript, junto do software Visual Studio Code.</span></a></br>
+                    <br><a href="https://github.com/ZKNs1/ADS_DevWeb" target=”_blank”><span class="textGitHub">Clique aqui para acessar o repositório no GitHub</span></a></br>
+                </div>
+            </div>
+               
+		    <div class="HTML">
+	            <br><a><span class="tittleHTML">HTML</span></a></br>
+	            <br><a><span class="acronymHTML">HyperText Markup Language</span></a></br>
+	            <br><a><span class="textHTML">Nós utilizamos o HTML para a criação de páginas web, permitindo estruturar todo o conteúdo de uma página utilizando marcação, para colocar textos, imagens, vídeos, links e entre outros.</span></a></br>
+	        </div>
+
+	        <div class="CSS">
+                <br><a><span class="tittleCSS">CSS</span></a></br>
+                <br><a><span class="acronymCSS">Cascading Style Sheets</span></a></br>
+                <br><a><span class="textCSS">Nós utilizamos o CSS para estilizar a página web, para definir como um conteúdo vai aparecer, como por exemplo: o alinhamento de um conteúdo, fonte de algum texto, entre outros.</span></a></br>
+	        </div>
+
+	        <div class="JS">
+                <br><a><span class="tittleJS">JavaScript</span></a></br>
+                <br><a><span class="textJS">Nós utilizamos o JavaScript para a página deixando de ser estática, baseando-se em protótipos, multi-paradigma e dinâmica, suportando estilos e adicionando animações.</span></a></br>
+	            </div>
+	        </div>
+
+            <div class="SemanticTag">
+                <br><a><span class="tittleSemanticTag">Tags semânticas</span></a></br>
+                <br><a><span class="textSemanticTag">As tags semânticas são utilizadas para fornecer um significado de um conteúdo, deixando o código mais legível e melhorando o entendimento do conteúdo.</span></a></br>
+            </div> 
+
+            <div class="DOM">
+                <br><a><span class="tittleDOM">DOM</span></a></br>
+                <br><a><span class="acronymDOM">Document Object Model</span></a></br>
+                <br><a><span class="textDOM"> O DOM é utilizado para representar a estrutura de um documento como uma árvore de nós, onde cada nó é um objeto representando uma parte do documento<br></span></a></br>
+            </div>
+
+            <div class="TAG">
+                <br><a><span class="tittleTag">Comandos/Tags:</span></a></br><br>
+                <button type="button" class="tagHTML">Tags Semânticas</button>
+                <div class="contentHTML">
+                    <ul>
+                        <li> <g>header</g> // Suporte introdutório ou navegacional;</li>
+                        <li> <g>nav</g> // Seção que aponta para outras páginas;</li>
+                        <li> <g>main</g> // Define conteúdo principal da página;</li>
+                        <li> <g>section</g> // Seção genérica;</li>
+                        <li> <g>footer</g> // Representa o rodapé;</li>
+                        <li><g>a</g> // Descreve um link.</li>
+                    </ul>
+                </div>
+                <button type="button" class="tagHTML">Comandos DOM</button>
+                <div class="contentHTML">
+                    <ul>
+                        <li> <g>var element = document.getElementById('myElementId')</g> // Seleciona um elemento pelo seu ID;</li>
+                        <li> <g>var elements = document.getElementsByClassName('myClassName')</g> // Seleciona todos os elementos com uma classe específica;</li>
+                        <li> <g>var elements = document.getElementsByTagName('div')</g> // Seleciona todos os elementos com uma tag específica;</li>
+                        <li> <g>var element = document.querySelector('.myClassName')</g> // Seleciona o primeiro elemento que corresponde a um seletor CSS;</li>
+                        <li> <g>var elements = document.querySelectorAll('.myClassName')</g> // Seleciona todos os elementos que correspondem a um seletor CSS;</li>
+                        <li> <g>var parent = element.parentNode</g> // Acessar o elemento pai.</li>
+                        <li> <g>var children = element.childNodes</g> // Acessar os elementos filhos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="M_exercicie" class="M_exercicie">
+                <h1 class="exercicie">Exercícios</h1>
+    
+                <h2 class="tittleEX1">Cadastro Squad</h2>
+                <span class="descEX1">Este é um sistema para cadastrar squads, podendo inserir uma nova, editá-la ou removê-la. Utilizamos HTML, CSS, JS e aplicamos conceitos DOM.</p></span>
+                <div class="image-desc-container1">
+                   
+                    <div class="ftEX1">
+                        <iframe src="Dom ex/index.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <h2 class="tittleEX2">Calculadora</h2>
+                <span class="descEX2">Esta é uma calculadora funcional, utilizando HTMl, CSS e JS.</span>
+                <div class="image-desc-container2">
+                    <div class="ftEX2">
+                        <iframe src="Calculator/index.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+                
+    </main>
+
+    <footer id="footer">
+        <div class="F_left">
+            <span class="F_name">Melina Nogueira    2024 ©</span>
+        </div>
+        <div class="F_right">
+            <span class="git"><a href="https://github.com/ZKNs1" target=”_blank”>
+                <img src="github.png" style="width:40px; height:40px;" alt="GitHub">
+            </a></span>
+
+            <span class="linkedin"><a href="https://www.linkedin.com/in/seu-perfil-linkedin">
+                <img src="linkedin.png" style="width:40px; height:40px;" alt="LinkedIn">
+            </a></span>
+        </div>
+    </footer>
+</body>
+</html>

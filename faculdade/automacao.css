@@ -1,0 +1,391 @@
+g{
+    color: rgb(6, 214, 75);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+header {
+    width: calc(100% - 200px);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    z-index: 1000;
+    background: black;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+header .right-menu {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header .right-menu span {
+    margin-left: 20px;
+    white-space: nowrap;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    color: white;
+}
+
+.name {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+}
+
+/*MAIN*/
+main {
+    padding-top: 75px;
+    flex: 1;
+    width: calc(100% - 200px);
+    margin-left: 100px;
+    background: rgb(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} 
+
+.anotacao, .exercicio {
+    font-family: "Kanit", sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.tittleArduino, .tittleESP, .tittleCommands {
+    font-family: "Rubik", sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.textArduino, .textESP, .textAutomacao {
+    font-family: "Cabin", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.Arduino {
+    font-weight: 20px;
+    margin-top: 20px;
+}
+
+.tittleEX1, .tittleEX2, .tittleEX3 {
+    font-family: "Inconsolata", monospace;
+    font-size: 30px;
+    color: white;
+}
+
+.EX1{
+    margin-top: 20px;
+}
+
+.EX2, .EX3{
+    margin-top:50px;
+}
+
+/* Footer */
+#footer {
+    width: calc(100% - 200px);
+    height: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    z-index: 1000;
+    background: rgb(0, 0, 0);
+    border-top: 1px solid white;
+    margin-top: 30px;
+    padding: 0 100px;
+    opacity: 0;
+    transition: 0.3s ease;
+    padding-top: 25px;
+}
+
+body.no-scroll {
+    margin-bottom: 20px;
+}
+
+footer .F_left, .F_right {
+    display: flex;
+    align-items: center;
+}
+
+footer .F_right a {
+    margin-left: 20px;
+    white-space: nowrap;
+    color: white;
+}
+
+.F_name {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 17px;
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+/* Toggle List */
+.commandDW, .commandDR, .commandAW, .commandAR, .commandPM {
+    background-color: #242424;
+    color: #515050;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Inconsolata", monospace;
+}
+
+.active, .commandDW:hover, .commandDR:hover, .commandAW:hover, .commandAR:hover, .commandPM:hover {
+    background-color: #e2e6ea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contentDW, .contentDR, .contentAW, .contentAR, .contentPM {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    margin-top: -10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    max-height: 0;
+    color:#e2e6ea;
+    font-family: "Merriweather", serif;
+}
+
+.contentDW.show, .contentDR.show, .contentAW.show, .contentAR.show, .contentPM.show {
+    padding: 18px;
+    max-height: 500px; 
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    margin-left: 15px;
+}
+
+/* Code Container */
+.code-container {
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 300px; 
+    margin-top: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #2e2e2e;
+}
+
+pre {
+    margin: 0;
+}
+
+code {
+    font-size: 17px;
+    font-family: "Courier New", Courier, monospace;
+    color: #dcdcdc;
+}
+
+/* Estilizando a scrollbar */
+
+/*EXERCICIO 1*/
+.descEX1::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.descEX1::-webkit-scrollbar-track {
+    background: #2e2e2e;
+    border-radius: 10px;
+}
+
+.descEX1::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 3px solid #2e2e2e; 
+}
+
+.descEX1::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+/* Flexbox container for image and description */
+.image-desc-container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.image-desc-container1 .ftEX1 {
+    flex: 1;
+}
+
+.image-desc-container1 .ftEX1 img {
+    max-width: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.image-desc-container1 .descEX1 {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: "Courier New", Courier, monospace;
+    flex: 2;
+    overflow-y: auto;
+    height: 155px;
+    min-width: 300px;
+    font-size: 15px;
+}
+
+/*EXERCICIO 2*/
+.descEX2::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.descEX2::-webkit-scrollbar-track {
+    background: #2e2e2e;
+    border-radius: 10px;
+}
+
+.descEX2::-webkit-scrollbar-thumb {
+    background-color: #555; 
+    border-radius: 10px;
+    border: 3px solid #2e2e2e; 
+}
+
+.descEX2::-webkit-scrollbar-thumb:hover {
+    background-color: #888
+}
+
+/* Flexbox container for image and description */
+.image-desc-container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.image-desc-container2 .ftEX2 {
+    flex: 1;
+}
+
+.image-desc-container2 .ftEX2 img {
+    max-width: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.image-desc-container2 .descEX2 {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: "Courier New", Courier, monospace;
+    flex: 2; 
+    overflow-y: auto;
+    height: 155px;
+    min-width: 300px;
+    font-size:15px;
+}
+
+/*EXERCICIO 3*/
+.descEX3::-webkit-scrollbar {
+    width: 12px;
+}
+
+.descEX3::-webkit-scrollbar-track {
+    background: #2e2e2e;
+    border-radius: 10px;
+}
+
+.descEX3::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 3px solid #2e2e2e; 
+}
+
+.descEX3::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+/* Flexbox container for image and description */
+.image-desc-container3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.image-desc-container3 .ftEX3 {
+    flex: 1;
+}
+
+.image-desc-container3 .ftEX3 img {
+    max-width: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.image-desc-container3 .descEX3 {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: "Courier New", Courier, monospace;
+    flex: 2;
+    overflow-y: auto;
+    height: 155px;
+    min-width: 300px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        font-size: 16px;
+    }
+    .name {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        font-size: 14px;
+    }
+    .name {
+        font-size: 20px;
+    }
+
+}

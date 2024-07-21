@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação Industrial</title>
+    <link rel="stylesheet" href="automacao.css">
+    <script src="automacao.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-javascript.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="name">Automação Industrial</span>
+        <div class="right-menu">
+            <div class="H_home">
+                <span class="home"><a href="facul.html" style="color: white; text-decoration-thickness: 1px;">home</a></span>
+            </div>
+            <div class="H_notes">
+                <span class="notes"><a href="#anotacao" style="color: white; text-decoration-thickness: 1px;">anotações</a></span>
+            </div>
+            <div class="H_exercice">
+                <span class="exercicios"><a href="#exercicio" style="color: white; text-decoration-thickness: 1px;">exercícios</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="anotacao" class="M_anotacao">
+            <div class="Anotacao">
+                <br><a><span class="anotacao">Anotações</span></a></br>
+                <br><a><span class="textAutomacao">Durante o semestre revi, aprendi e apliquei novos conceitos. Aprendi sobre a utilização de funções como por exemplo: map e millis, e função Setup e Loop, necessário para executar um processo uma vez ou repetir o processo várias vezes voltado para a linguagem C++. Pude rever conceitos sobre o funcionamento dos microcontroladores Arduino e do ESP32, aprendidos anteriormente e implementalos com novos conhecimentos.</span></a></br>
+                <br><a><span class="tittleCommands">Comandos Básicos:<br></span></a></br>
+
+                <button type="button" class="commandPM">pinMode</button>
+                <div class="contentPM">
+                    <ul>
+                        <li><g>pinMode(pin, OUTPUT)</g> // Configura o pino como saída;</li>
+                        <li><g>pinMode(pin, INPUT)</g> // Configura o pino como entrada;</li>
+                        <li>Ex: pinMode(LED, OUTPUT) = define LED como saída;</li>
+                        <li>Ex: pinMode(BUTTON, INPUT) = define BUTTON como entrada.</li>
+                    </ul>
+                </div>
+
+                <button type="button" class="commandDW">Digital Write</button>
+                <div class="contentDW">
+                    <ul>
+                        <li><g>digitalWrite(pino, valor);</g></li>
+                        <li>Escreve um valor para uma entrada ou saída;</li>
+                        <li>Ex: digitalWrite(4, 1) = ON, digitalWrite(4, 0) = OFF.</li>
+                    </ul>
+                </div>
+
+                <button type="button" class="commandDR">Digital Read</button>
+                <div class="contentDR">
+                    <ul>
+                        <li><g>digitalRead(pino);</g></li>
+                        <li>Ele verifica se no pino x houve entrada de energia;</li>
+                        <li>Ex: digitalRead(3), se tiver energia, digitalRead = 1, se não houver digitalRead = 0.</li>
+                    </ul>
+                </div>
+
+                <button type="button" class="commandAW">Analog Write</button>
+                <div class="contentAW">
+                    <ul>
+                        <li><g>analogWrite(pino, valor);</g></li>
+                        <li>256 Bits (1/4 do analog read);</li>
+                        <li>Ex: Analogwrite (A1, 512).</li>
+                    </ul>
+                </div>
+
+                <button type="button" class="commandAR">Analog Read</button>
+                <div class="contentAR">
+                    <ul>
+                        <li><g>analogRead(pino);</g></li>
+                        <li>Lê de 0V até 5V;</li>
+                        <li>Devolve em 1024 bits;</li>
+                        <li>Ex: AnalogRead(A0), 0% 0V = 0, 50% 2,5V = 512, 100% 5V = 1024.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Arduino">
+                <br><a><span class="tittleArduino">Arduino</span></a></br>
+                <br><a><span class="textArduino">
+                    O Arduino é uma plataforma que combina hardware e software. Ele é conhecido por ser simples de usar e é muito popular porque permite conectar uma grande variedade de componentes, como botões, LEDs, sensores e outros dispositivos eletrônicos. Ele é muito usado em projetos de automação, arte interativa, robótica e muito mais, devido sua facilidade de uso e versatilidade.</span></a></br>
+            </div>
+
+            <div class="ESP">
+                <br><a><span class="tittleESP">ESP32</span></a></br>
+                <br><a><span class="textESP">O ESP32 é um microcontrolador, mas possui recursos adicionais, como Wi-Fi e Bluetooth embutidos. Essas características o tornam ideal para projetos de IoT (Internet das Coisas), nos quais dispositivos precisam se comunicar pela internet. Isso abre um mundo de possibilidades, desde casas inteligentes até sistemas de monitoramento remoto.</span></a></br>
+            </div>
+        </div>
+
+        <div id="exercicio" class="M_exercicio">
+            <br><a><span class="exercicio">Exercícios</span></a></br>
+
+            <div class="EX1">
+            <a><span class="tittleEX1">Sistema Semáforo - Arduino</span></a>
+            <div class="image-desc-container1">
+                <span class="ftEX1"><img src="Fotos/AutEx1.png" alt="Foto Exercício 1"></span>
+                <div class="descEX1">
+                    <a><span class="textEX1">Componentes utilizados:<br>- Arduino UNO<br>- 5x Leds<br>- Botão<br>- 5x Resistores 100 Ohm<br><br>Este sistema foi feito para simular o funcionamento de um semáforo de carros junto de um semáforo para pedestres implementando um botão para facilitar a travessia do pedestre. Este exercício foi difícil precisei pesquisar para entender como iria fazer o controle das leds, por exemplo manter o led acesso por um determinado tempo, então foi utilizado o millis para ter esse controle de tempo. Além disso, estava tendo problemas para a lógica do botão de pedestres, para que o semáforo do carro fechasse mais rápido.</span></a></br>
+                </div>
+            </div>
+            <div class="code-container">
+                <pre><code>
+    int vermelho = 3;
+    int amarelo = 4;
+    int verde = 5;
+    int Pvermelho = 6;
+    int Pverde = 7;
+    int button = 2;
+    bool estadoBotao = false;
+    int tempo_intermitente = 1000;
+    
+    unsigned long millisTarefa1 = millis();
+    unsigned long millisTarefa2 = millis();
+    unsigned long millisTarefa3 = millis();
+    unsigned long millisTarefa4 = millis();
+    unsigned long millisTarefa5 = millis();
+    unsigned long tempoInicioBotao = 0;
+    bool botaoPressionado = false;
+    
+    void setup() {
+        pinMode(vermelho, OUTPUT);
+        pinMode(amarelo, OUTPUT);
+        pinMode(verde, OUTPUT);
+        pinMode(Pvermelho, OUTPUT);
+        pinMode(Pverde, OUTPUT);
+        pinMode(button, INPUT_PULLUP);
+      
+        // Pisca amarelo 3x
+        for (int i = 0; i < 3; i++) {
+            digitalWrite(amarelo, HIGH);
+            delay(1000);
+            digitalWrite(amarelo, LOW);
+            delay(1000);
+        }
+    }
+    
+    void loop() {
+        estadoBotao = digitalRead(button);
+        if (estadoBotao == LOW && !botaoPressionado) {
+            botaoPressionado = true;
+            tempoInicioBotao = millis();
+        }
+    
+        if (botaoPressionado && (millis() - tempoInicioBotao >= 10000)) { // 10 segundos de espera
+            botaoPressionado = false;
+            acionamentoBotao();
+        }
+    
+        tarefa1();
+        tarefa2();
+        tarefa3();
+        tarefa4();
+        tarefa5();
+    }
+    
+    void tarefa1() {
+        if ((millis() - millisTarefa1) > 6000) {   
+            digitalWrite(vermelho, HIGH);
+            digitalWrite(Pvermelho, LOW);
+            digitalWrite(Pverde, HIGH);
+            millisTarefa1 = millis();
+        }
+    }
+    
+    void tarefa2() {
+        if ((millis() - millisTarefa2) > 5000) { 
+            digitalWrite(Pverde, LOW);
+            digitalWrite(Pvermelho, HIGH);
+            delay(500);
+            digitalWrite(Pvermelho, LOW);
+            delay(500);
+            digitalWrite(Pvermelho, HIGH);
+            delay(500);
+            digitalWrite(Pvermelho, LOW);
+            delay(500);
+            digitalWrite(Pvermelho, HIGH);
+            millisTarefa2 = millis();
+        }
+    }
+       
+    void tarefa3() {
+        if ((millis() - millisTarefa3) > 1000) {  
+            digitalWrite(vermelho, LOW);
+            digitalWrite(Pvermelho, HIGH);
+            digitalWrite(verde, HIGH);
+            millisTarefa3 = millis();
+        }
+    }
+       
+    void tarefa4() {
+        if ((millis() - millisTarefa4) > 5000) {
+            digitalWrite(verde, LOW);
+            digitalWrite(amarelo, HIGH);
+            millisTarefa4 = millis();
+        }
+    }
+       
+    void tarefa5() {
+        if ((millis() - millisTarefa5) > 2000) {
+            digitalWrite(amarelo, LOW);
+            millisTarefa5 = millis();
+        }
+    }
+       
+    void acionamentoBotao() {
+        // Interrompe o ciclo normal e aciona o ciclo para pedestre atravessar
+        digitalWrite(verde, LOW);
+        digitalWrite(amarelo, HIGH);
+        delay(2000);
+        digitalWrite(amarelo, LOW);
+        digitalWrite(vermelho, HIGH);
+        digitalWrite(Pvermelho, LOW);
+        digitalWrite(Pverde, HIGH);
+        delay(10000);
+        digitalWrite(Pverde, LOW);
+        digitalWrite(Pvermelho, HIGH);
+        delay(2000);
+        digitalWrite(Pvermelho, LOW);
+        millisTarefa1 = millis();
+        millisTarefa2 = millis();
+        millisTarefa3 = millis();
+        millisTarefa4 = millis();
+        millisTarefa5 = millis();
+    }
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+            <div class="EX2">
+            <a><span class="tittleEX2">Sistema Fotorresistor - Arduino</span></a>
+            <div class="image-desc-container2">
+                <span class="ftEX2"><img src="Fotos/AutEx3.png" alt="Foto Exercício 2"></span>
+                <div class="descEX2">
+                    <a><span class="textEX2">Componentes utilizados:<br>- Arduino UNO<br>- 1x Leds<br>- Fotorresistor<br>- 1x Resistor 4.7 kOhm<br>- 1x Resistor 220 Ohm<br><br>Este sistema foi feito para simular o funcionamento de um controle de intensidade de luz do Led utilizando um sensor Fotorresistor. Nesta atividade houve dúvidas e dificuldades na parte de utilização da função map, porém a leitura do valor captado pelo fotorresistor ajudou para fazer a conversão para o controle de intensidade.</span></a></br>
+                </div>
+            </div>
+            <div class="code-container">
+                <pre><code>
+	int sensorValue = 0;
+	int LED = 9;
+
+	void setup(){
+  		pinMode(A0, INPUT);
+  		Serial.begin(9600);
+  		pinMode(LED, OUTPUT);
+	}
+
+	void loop(){
+  		// Leitura do valor no sensor
+  		sensorValue = analogRead(A0);
+  
+  		// Mostra o valor lido no Serial
+  		Serial.println(sensorValue);
+  
+  		//Mapeia a leitura do sensor para o range correspondente do led
+  		analogWrite(LED, map(sensorValue, 0, 1023, 0, 255));
+  		delay(100); // Wait for 100 millisecond(s)
+	}       
+		            </code></pre>
+                </div>
+            </div>
+        </div>
+
+            <div class="EX3">
+                <a><span class="tittleEX3">Sistema Write/Print com Serial - ESP32</span></a>
+                <div class="image-desc-container3">
+                    <div class="ftEX3">
+                        <img src="Fotos/AutEx2.png" alt="Foto Exercício 3">
+                    </div>
+                    <div class="descEX3">
+                        <span class="textEX3">Componentes utilizados:<br>- ESP 32<br>- Liquid Crystal Display (LCD)<br><br>Este sistema foi feito para mostrar uma mensagem escrita pelo usuário no LCD, utilizando a comunicação Serial.<br>Neste exercício precisei pesquisar sobre o funcionamento da função Serial, para saber como fazer a mensagem escrita ser lida e apresentada no display.</span>
+                    </div>
+                </div>
+                
+                <div class="code-container">
+                    <pre><code>
+    #include LiquidCrystal_I2C.h
+
+    LiquidCrystal_I2C LCD = LiquidCrystal_I2C(0x27, 16, 2);
+
+    String mensagemAnterior = ""; // Variável para armazenar a mensagem anterior
+
+    void setup() {
+        Serial.begin(9600); // Inicia a comunicação serial
+        LCD.init();
+        LCD.backlight();
+
+        LCD.setCursor(0, 0);
+        LCD.print("Olá");
+        delay(1000);
+        LCD.setCursor(0, 1);
+        LCD.print("Sistema Pronto");
+    }
+
+    //Função para ler, verificar e atualizar a mensagem
+    void loop() {
+        if (Serial.available() > 0) { // Verifica se há dados disponíveis na porta serial
+        String novaMensagem = Serial.readString(); // Lê a mensagem serial
+  
+            if (novaMensagem != mensagemAnterior) { // Verifica se a mensagem é diferente da anterior
+                LCD.clear(); // Apaga a mensagem anterior no LCD
+                escreve(0, 1, novaMensagem); // Escreve a nova mensagem no LCD
+                mensagemAnterior = novaMensagem; // Atualiza a mensagem anterior
+            }
+        }
+    }
+
+
+    //Função para mostrar mensagem no LCD
+    void escreve(int col, int lin, String msg) {
+        LCD.setCursor(col, lin);
+        LCD.print(msg);
+    } 
+                    </code></pre>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="F_left">
+            <span class="F_name">Melina Nogueira    2024 ©</span>
+        </div>
+        <div class="F_right">
+            <span class="git"><a href="https://github.com/ZKNs1">
+                <img src="github.png" style="width:40px; height:40px;" alt="GitHub">
+            </a></span>
+
+            <span class="linkedin"><a href="https://www.linkedin.com/in/melina-nogueira-844878273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                <img src="linkedin.png" style="width:40px; height:40px;" alt="LinkedIn">
+            </a></span>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem de Programação</title>
+    <link rel="stylesheet" href="ling.css">
+    <script src="ling.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="name">Linguagem de Programação</span>
+        <div class="right-menu">
+            <div class="H_home">
+                <span class="home"><a href="facul.html" style="color: white; text-decoration-thickness: 1px;">home</a></span>
+            </div>
+            <div class="H_notes">
+                <span class="notes"><a href="#anotation" style="color: white; text-decoration-thickness: 1px;">anotações</a></span>
+            </div>
+            <div class="H_exercice">
+                <span class="exercicies"><a href="https://github.com/ZKNs1/ADS_LdP" target=”_blank” style="color: white; text-decoration-thickness: 1px;">GitHub</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="anotation" class="M_anotation">
+            <div class="Anotation">
+                <br><a><span class="anotation">Anotações</span></a></br>
+                <br><a><span class="textLing">Durante este semestre aprendi muitos conceitos da programação e de lógica, além de ter aprendido a trabalhar com Java. Esta matéria foi desafiadora, muitos conteúdos novos para aprender e aplicar, principalmente na parte de programação orientada a objetos, mas me deu incentivo para entender e continuar na área.</span></a></br>
+				<div class="Software">
+                    <br><a><span class="tittleSoftware">Programação:</span></a></br>
+                    <br><a><span class="textSoftware">A programação é feita utilizando a linguagem Java, junto do software Intellij.</span></a></br>
+                    <br><a href="https://github.com/ZKNs1/ADS_LdP" target=”_blank”><span class="textGitHub">Clique aqui para acessar o repositório no GitHub</span></a></br>
+                </div>
+            </div>
+               
+		    <div class="Variables">
+	            <br><a><span class="tittleVariables">Variáveis</span></a></br>
+	            <br><a><span class="textVariables">Nós utilizamos as variáveis para armazenar dados de diversos tipos, como: String, int, boolean, char, float, double.</span></a></br>
+                <div class="code-container1">
+                    <pre><code>
+    String nome = "Melina";
+    int  idade = 18;
+    boolean faculdade = true;
+                    </code></pre>
+                </div>
+            </div>
+
+	        <div class="Operators">
+                <br><a><span class="tittleOperators">Operadores</span></a></br>
+                <br><a><span class="textOperators">São usados para realizar operações com valores ou variáveis, eles permitem a manipulação de dados, execução de cálculos, e controle do fluxo de execução. </span></a></br>
+                
+                <div class="Text-Right">
+                    <div class="Arithmetic">
+                         <br><a><span class="tittleArithmetic">Operados Aritméticos</span></a></br>
+                        <div class="Text-Right">
+                            <br><a><span class="textArithmetic">São usados para realizar operações matemáticas básicas.</span></a></br>
+                            <div class="code-container">
+                                <pre><code>
+    int a = 3 + 5; // Soma
+    int b = 23 - 12; // Subtração;
+    int c = 7 * 4 // Multiplicação;
+    int d = 6 / 2 // Divisão;
+    int f = 15 % 4;  // Resto;
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Comparison">
+                        <br><a><span class="tittleComparison">Operados Comparação</span></a></br>
+                        <div class="Text-Right">
+                            <br><a><span class="textComparison">São usados para comparar dois valores e retornar um valor booleano.</span></a></br>
+                            <div class="code-container">
+                                <pre><code>
+    a == b; // a igual a b
+    a != b; // a diferente de b
+    a > b; // a  maior que b
+    a < b; // a menor que b
+    a >= b; // a maior ou igual a b
+    a <= b; // a menor ou igual a b
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Logic">
+                        <br><a><span class="tittleLogic">Operados Lógica</span></a></br>
+                        <div class="Text-Right">
+                            <br><a><span class="textLogic">São usados para combinar expressões booleanas.</span></a></br>
+                            <div class="code-container">
+                                <pre><code>
+    (a && b) // 'E' = a e b
+    (a || b) // 'OU' = a ou b
+    result = (a > b) && (a < c);  // Retorna true se ambos a > b e a < c forem true
+    result = (a > b) || (a < c);  // Retorna true se pelo menos uma entre a > b ou a < c for true
+    result = !(a > b);  // Retorna true se a > b for false
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Decision">
+                <br><a><span class="tittleDecision">Estrutura de decisão</span></a></br>
+                <br><a><span class="textDecision">Utilizada para tomar decisões com base em condições.</span></a></br>
+
+                <div class="Text-Right">
+                    <div class="IfElse">
+                        <br><a><span class="tittleIfElse">If/Else</span></a></br>
+                        <div class="Text-Right">
+                            <br><a><span class="textIfElse">O if e o else se complementam, de forma que se algo não acontecer (if) o programa deverá tomar outra atitude(else).</span></a></br>
+                            <div class="code-container">
+                                <pre><code>
+    int a = 5;
+    int b = 3;
+
+    //Compara o valor de 'a' e de 'b'
+
+    if(a>b){ //Caso 'a' seja maior que 'b'
+        System.out.println("'a' é maior que 'b")
+    }
+
+    else{ //Caso 'b' for maior que 'a'
+        System.out.println("'b' é maior que 'a'")
+    }
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Switch">
+                        <br><a><span class="tittleSwitch">Switch</span></a></br>
+                        <div class="Text-Right">
+                        <br><a><span class="textSwitch">O switch é utilizado para selecionar um bloco de código a ser executado dentre várias opções, com base no valor de uma expressão.</span></a></br>
+                            <div class="code-container">
+                                <pre><code>
+    //O sistema deverá responder com o respectivo dia, neste caso deverá executar o caso 3 e dizer que é terça-feira.
+    int day = 3;
+  
+    switch (day) {
+        case 1:
+            System.out.println("Domingo");
+            break;
+        case 2:
+            System.out.println("Segunda-feira");
+            break;
+        case 3:
+            System.out.println("Terça-feira");
+            break;
+        case 4:
+            System.out.println("Quarta-feira");
+            break;
+        case 5:
+            System.out.println("Quinta-feira");
+            break;
+        case 6:
+            System.out.println("Sexta-feira");
+            break;
+        case 7:
+            System.out.println("Sábado");
+            break;
+        default:
+            System.out.println("Dia inválido");
+            break;
+    }
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Repeat">
+                <br><a><span class="tittleRepeat">Estruturas Repetição</span></a></br>
+                <br><a><span class="textRepeat">São usados para realizar a mesma operação diversas vezes. </span></a></br>
+                
+                <div class="TextRight">
+                    <div class="For">
+                        <br><a><span class="tittleFor">For</span></a></br>
+                        <div class="Text-Right">
+                            <br><a><span class="textFor">Repete um pedaço do código por um número específico de vezes. O “for” inicializa a variável i, depois verifica se seu valor é menor que outro, e incrementa i a cada repetição, o loop encerra quando o valor de i passar o valor específicado.</span></a></br>
+                            <div class="code-container">
+                                <pre><code>
+    for (int i = 0; i < 10; i++) {
+        System.out.println("Valor de i: " + i);
+    }
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="While">
+                        <br><a><span class="tittleWhile">While</span></a></br>
+                        <div class="Text-Right">
+                            <br><a><span class="textWhile">Executa um bloco de instruções repetidas vezes enquanto uma condição for verdadeira.</span></a></br>
+                            <div class="code-container">
+                                <pre><code>
+    int i = 0;
+    while (i < 10) {
+        System.out.println("Valor de i: " + i);
+        i++;
+    }
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Vector">
+                <br><a><span class="tittleVector">Vetores</span></a></br>
+                <br><a><span class="textVector">Os vetores permitem o armazenamento de uma coleção de valores do mesmo tipo e são unidimensionais.</span></a></br>
+                <div class="code-container">
+                    <pre><code>
+    int[] numeros = {1, 2, 3, 4, 5};
+
+    System.out.println(numeros[0]); // Imprime o primeiro elemento: 1
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="Headquarters">
+                <br><a><span class="tittleHeadquarters">Matrizes</span></a></br>
+                <br><a><span class="textHeadquarters"> As matrizes são usadas para representar uma certa quantidade de variáveis de valores homogêneos e armazena elementos em grade bidimensional ou superior.</span></a></br>
+                <div class="code-container">
+                    <pre><code>
+    int[][] matriz = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    System.out.println(matriz[0][1]); // Imprime o elemento na primeira linha, segunda coluna: 2
+                    </pre></code>
+                </div>
+            </div>
+
+            <div class="Function">
+                <br><a><span class="tittleFunction">Funções</span></a></br>
+                <br><a><span class="textFunction">Função é um bloco de código que executa alguma operação, podem definir parâmetros de entrada permitindo chama-la e passar argumentos, além de também poder retornar um valor como saída. </span></a></br>
+                <div class="code-container">
+                    <pre><code>
+    // A função “areaCirculo” é uma forma de encapsular a lógica de calcular a área de um círculo em um único bloco de código reutilizável.
+ 
+    // Definindo a função areaCirculo
+    public static double areaCirculo(double raio) {
+        double area = Math.PI * raio * raio;
+        return area;
+    }
+
+    public static void main(String[] args) {
+        // Chamando a função areaCirculo e armazenando o resultado
+        double raio = 5.0;
+        double area = areaCirculo(raio);
+
+        System.out.println("A área de um círculo com raio " + raio + " é: " + area);
+    }
+                    </code></pre>
+                </div>
+            </div>
+    
+            <div class="POO">
+                <br><a><span class="tittlePOO">POO</span></a></br>
+                <br><a><span class="acronymPOO">Programação Orientada a Objetos</span></a>
+                <br><a><span class="textPOO">A programação orientada a objetos organiza o software em torno de "objetos" em vez de funções e lógica.<br>Um objeto é uma instância de uma classe, ou seja, é uma estrutura que define as propriedades chamados de atributos e comportamentos chamados de métodos que o objeto pode ter.</span></a></br>
+            
+                <div class="TextRight">
+                    <div class="Class">
+                        <br><a><span class="tittleClass">Classes e objetos</span></a>
+                        <br><a><span class="textClass">Uma classe é uma forma de definir um tipo de dado em uma linguagem orientada a objeto. Ela é formada por dados (atributos) e comportamentos (métodos)</span></a>
+                        <br><a><span class="textObject">Objeto é uma instância de uma classe. Cada objeto pode ter diferentes valores para os atributos definidos na classe.</span></a>
+                        <div class="code-container">
+                            <pre><code>
+    public class Pessoa {
+        // Atributos da classe
+        private String nome;
+        private int idade;
+    
+        // Construtor da classe
+        public Pessoa(String nome, int idade) {
+            this.nome = nome;
+            this.idade = idade;
+        }
+    
+        // Método da classe
+        public void apresentar() {
+            System.out.println("Oi, eu sou  " + nome + " e tenho " + idade + " anos.");
+        }
+    }
+
+
+    public class Main {
+        public static void main(String[] args) {
+            // Criação de um objeto da classe Pessoa
+            Pessoa pessoa = new Pessoa("João", 25);
+            // Chamada do método apresentar do objeto pessoa
+            pessoa.apresentar(); // Imprime: Oi, eu sou João e tenho 25 anos.
+        }
+    }
+                            </code></pre>
+                        </div>
+                    </div>
+
+                    <div class="Encapsulation">
+                        <br><a><span class="tittleEncapsulation">Encapsulamento</span></a>
+                        <br><a><span class="textEncapsulation">O encapsulamento é uma forma de esconder os detalhes internos de um objeto e permitir o acesso apenas através de métodos públicos.</span></a>
+                        <div class="code-container">
+                            <pre><code>
+    public class Pessoa {
+        // Apenas acessíveis nesta classe
+        private String nome;
+        private int idade;
+    
+        //Acessíveis em todas as classes
+        // Métodos getter e setter para o atributo nome
+        public String getNome() {
+            return nome;
+        }
+    
+        public void setNome(String nome) {
+            this.nome = nome;
+        }
+    
+        // Métodos getter e setter para o atributo idade
+        public int getIdade() {
+            return idade;
+        }
+    
+        public void setIdade(int idade) {
+            this.idade = idade;
+        }
+    }
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="F_left">
+            <span class="F_name">Melina Nogueira    2024 ©</span>
+        </div>
+        <div class="F_right">
+            <span class="git"><a href="https://github.com/ZKNs1" target=”_blank”>
+                <img src="github.png" style="width:40px; height:40px;" alt="GitHub">
+            </a></span>
+
+            <span class="linkedin"><a href="https://www.linkedin.com/in/seu-perfil-linkedin">
+                <img src="linkedin.png" style="width:40px; height:40px;" alt="LinkedIn">
+            </a></span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciência da Dados</title>
+    <link rel="stylesheet" href="ciencia.css">
+    <script src="ciencia.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span class="name">Ciência de Dados</span>
+        <div class="right-menu">
+            <div class="H_home">
+                <span class="home"><a href="facul.html" style="color: white; text-decoration-thickness: 1px;">home</a></span>
+            </div>
+            <div class="H_notes">
+                <span class="notes"><a href="#anotation" style="color: white; text-decoration-thickness: 1px;">anotações</a></span>
+            </div>
+            <div class="H_exercice">
+                <span class="exercicies"><a href="https://colab.research.google.com/drive/1XJc4j6QsvGOI5S1MjNL4mhHc1JF3euDw#scrollTo=CDQi4RViD16i" target=”_blank” style="color: white; text-decoration-thickness: 1px;">Colab</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="anotation" class="M_anotation">
+            <div class="Anotation">
+                <br><a><span class="Anotation">Anotações</span></a></br>
+                <br><a><span class="textCie">Ciência de Dados relaciona a programação com a matemática, como muito visto neste semestre, as estatísticas, trabalhando com grandes conjuntos de dados. Nesta matéria tive um dos meus primeiros contatos com Python, mesmo que voltado para a matemática, gostei da matéria de ver formas simples para fazer contas principalmente utilizando um DataFrame.</span></a></br>
+                <div class="Software">
+                    <br><a><span class="tittleSoftware">Programação:</span></a></br>
+                    <br><a><span class="textSoftware">Toda a programação foi feita utilizando a linguagem Python, o notebook foi hospedado no site Colab.</span></a></br>
+                    <br><a href="https://colab.research.google.com/drive/1XJc4j6QsvGOI5S1MjNL4mhHc1JF3euDw#scrollTo=CDQi4RViD16i" target=”_blank”><span class="textColab">Clique aqui para acessar meu Colab</span></a></br>
+                </div>
+            </div>
+
+            <div class="Command">
+                <br><a><span class="tittleCommand">Comandos Básicos:<br></span></a>
+            
+                <button type="button" class="commandPD">pandas</button>
+                    <div class="contentPD">
+                        <ul>
+                            <g>import pandas as pd</g>
+                            <br>Permite ler e escrever dados de diversos formatos, além de possuir funções estatísticas e analíticas. Possibilita trabalhar com DataFrame.
+                        </ul>
+                    </div>
+
+                    <button type="button" class="commandNP">numpy</button>
+                    <div class="contentNP">
+                        <ul>
+                            <g>import nump as np</g>
+                            <br>Fornece suporte e funções para arrays e matrizes multidimensionais.
+                        </ul>
+                    </div>
+
+                    <button type="button" class="commandMT">matplotlib</button>
+                    <div class="contentMT">
+                        <ul>
+                            <g>import matplotlib.pyplot as plt</g>
+                            <br>Importar o DataFrame do Titanic, utilizado para estudos da matéria.
+                        </ul>
+                    </div>
+
+                    <button type="button" class="commandDF">DataFrame</button>
+                    <div class="contentDF">
+                        <ul>
+                            <g>df = pd.read_excel("https://github.com/PinkWink/ML_tutorial/raw/master/dataset/titanic.xls")</g>
+                            <br>Importar o DataFrame do Titanic, utilizado para estudos da matéria.
+                        </ul>
+                    </div>
+                </div>
+            </div>
+               
+		    <div class="Sample">
+	            <br><a><span class="tittleSample">Amostragem</span></a></br>
+
+                
+                <div class="RandomSample">
+	                <br><a><span class="tittleRandomSample">Amostragem Aleatória</span></a></br>
+
+                    <div class="TextRight">
+	                    <br><a><span class="textRandomSample"><li>Cada elemento da população tem a mesma possibilidade de serem escolhidos.</li></span></a></br>
+                        
+                        <div class="code-container">
+                            <pre><code>
+    df.iloc[1,1] 
+    #Mostra a informação de uma célula, [linha, coluna]
+    
+    df.iloc[1] 
+    #Mostra a informação de uma linha, [linha]
+    
+    df.iloc[:,1] 
+    #Mostra a informação de uma coluna, [intervalo, coluna]
+    
+    df.iloc[1:5,1] 
+    #Mostra a informação de uma linha até tal linha de uma coluna, [começoLinha:fimLinha, coluna]
+    
+    df.iloc[1:5,1:3] 
+    #Mostra a informação de uma linha até tal linha de uma coluna até outra coluna, [começoLinha:fimLinha, começoColuna:fimColuna]
+    
+    np.random.randint(0, 5, 10) 
+    #np.random.randint(init, final, size)
+
+    df.iloc[[1,3,5],[2,4,6]] 
+    #Seleciona linhas e colunas específicas
+                            </code></pre>
+                        </div>
+                    
+                        <br><a><span class="tittleDF">DataFrame Titanic</span></a></br>
+                        <div class="code-container">
+                            <pre><code>
+    #Colete uma amostra aleatória de 10 linhas do df titanic
+    df.iloc[np.random.randint(0, 1309, 10),:]
+    amostra = df.sample(10) #Mesma coisa da linha anterior
+    
+    #Deixar o resultado em ordem decrescente, mudar o ascending=True deixa crescente
+    amostra1 = df.iloc[10:50].sample(10).sort_index(ascending=False)
+                            </pre></code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="SistematicSample">
+                    <br><a><span class="tittleSistematicSample">Amostragem Sistemática</span></a></br>
+                    <div class="TextRight">
+	                    <br><a><span class="textSistematicSample"><li>É realizada uma seleção aleatória do primeiro elemento da amostra e em seguidas os demais são escolhidos através de intervalos fixos ou sistemáticos.</li></span></a></br>
+                        <div class="code-container">
+                            <pre><code>
+    #Função numpy arange → gera um array a partir de um intervalo
+    np.arange(init,final,step) 
+    step= de tanto em tanto exemplo: (0,100,5): 0, 5 , 10, 15, 20
+
+    array = np.arange(1,100,1)
+    array
+                            </pre></code>
+                        </div>
+
+                        <br><a><span class="tittleDF">DataFrame Titanic</span></a></br>
+                        <div class="code-container">
+                            <pre><code>
+    #Exercício: obtenha uma amostra sistemática do df com passo 31, print 10
+
+    #Garante espaço suficiente para pegar amostras com um passo de 31 no DataFrame
+    firstline = np.random.randint(0,1309-310,1) 
+    firstline
+    
+    #Função para pegar 10 amostras com passo 31
+    lines = np.arange(firstline,1309,31)[:10]
+    lines
+    
+    #Mostrar as amostras coletadas
+    amostra = df.iloc[lines]
+    amostra
+                            </pre></code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="StratifiedSampling">
+                    <br><a><span class="tittleStratifiedSampling">Amostragem Estratificada</span></a></br>
+                    <div class="TextRight">
+	                    <br><a><span class="textStratifiedSampling"><li>Separa os elementos em grupos homogêneos e em seguida é feita uma amostra aleatória em cada grupo.</li></span></a></br>
+                        <div class="code-container">
+                            <pre><code>
+    #Função numpy arange → gera um array a partir de um intervalo
+    np.arange(init,final,step) 
+    step= de tanto em tanto exemplo: (0,100,5): 0, 5 , 10, 15, 20
+
+    array = np.arange(1,100,1)
+    array
+                            </pre></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="CentralTendencies">
+                <br><a><span class="tittleSample">Tendências Centrais</span></a></br>
+
+                <div class="Mode">
+                    <br><a><span class="tittleMode">Moda</span></a></br>
+                    <br><a><span class="textMode"><li>Representa o valor mais frequente de um conjunto de dados.</li></span></a></br>
+
+                    <div class="TextRight">
+                        <div class="Modal">
+                            <br><a><span class="tittleModal">Modal</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Um único valor aparece com mais frequência do que os outros
+    modal = pd.DataFrame([35, 37, 36, 34, 38, 35, 37, 37, 33, 36, 38, 37,35, 37, 34, 33, 37, 36, 35, 38, 36, 35, 36, 37, 38, 39, 37, 37, 36, 37, 33, 37, 35, 37, 39])
+    modal.mode()
+    #mode é um método do pandas que calcula a moda
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="TextRight">
+                        <div class="Bimodal">
+                            <br><a><span class="tittleBimodal">Bimodal</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Dois valores que aparecem com a mesma frequência e mais frequentemente do que os outros
+    bimodal = pd.DataFrame([35, 37, 36, 34, 38, 35, 37, 37, 33, 36, 38, 37,35, 37, 34, 33, 37, 36, 35, 38, 36, 35, 36, 37, 38, 39, 37, 37, 36, 37, 33, 37, 35, 37, 39])
+    bimodal.mode()
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="TextRight">
+                        <div class="Polimodal">
+                            <br><a><span class="tittlePolimodal">Polimodal</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Mais de dois valores que aparecem com a mesma frequência e mais frequentemente do que os outros
+    polimodal = pd.DataFrame([35, 37, 36, 34, 38, 35, 37, 37, 33, 36, 38, 37,35, 37, 34, 33, 37, 36, 35, 38, 36, 35, 36, 37, 38, 39, 37, 37, 36, 37, 33, 37, 35, 37, 39])
+    polimodal.mode()
+                                    </pre></code>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    
+                    <div class="TextRight">
+                        <div class="Amodal">
+                            <br><a><span class="tittleAmodal">Amodal</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Todos os valores aparecem com a mesma frequência
+    amodal = pd.DataFrame([1, 2, 3, 4, 5 ,6, 7, 8, 9, 10, 11, 12])
+    amodal.mode().shape[0]
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="TextRight">
+                        <div class="ExercicieMode">
+                            <br><a><span class="tittleExercicieMode">Exercício</span></a>
+                            <div class="TextRight">                      
+                                <div class="code-container">
+                                    <pre><code>
+    #Descobrir qual o tipo de Moda
+    moda = pd.DataFrame([1, 2, 3, 4, 5 ,6, 7, 8, 9, 10, 11, 12])
+    moda.mode().shape[0]
+
+    if moda.mode().shape[0] == moda.shape[0]:
+      print('amodal')
+    elif moda.mode().shape[0] == 1:
+      print('modal')
+    elif moda.mode().shape[0] == 2:
+      print('bimodal')
+    else:
+      print('polimodal')
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="TextRight">
+                        <div class="ExercicieDF">
+                            <br><a><span class="tittleExercicieDF">Exercício DataFrame</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Apresentar a moda das colunas: pclass, survived, name, sex, age;
+    df[['pclass','survived','name', 'sex','age']].mode()
+    df.mode()
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Median">
+                    <br><a><span class="tittleMedian">Mediana</span></a></br>
+                    <br><a><span class="textMedian"><li>Representa o valor central de um conjunto de dados.</li></span></a></br>
+
+                    <div class="TextRight">
+                        <div class="Odd">
+                            <br><a><span class="tittleOdd">Número ímpar de elementos</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Utilizamos o método median para calcular a mediana
+    medianaImpar = pd.DataFrame([1.63, 1.65, 1.72, 1.75, 1.79, 1.80, 1.82])
+    medianaImpar.median()
+                                    </pre></code>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+
+                    <div class="TextRight">
+                        <div class="Even">
+                            <br><a><span class="tittleEven">Número par de elementos</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #medianaPar = pd.DataFrame([1.63, 1.65, 1.72, 1.75, 1.79, 1.80])
+    medianaPar.median()
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="TextRight">
+                        <div class="EmptyValue">
+                            <br><a><span class="tittleEmptyValue">Valores Ausentes</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #O método median() ignora os valores NaN
+    mediana = pd.DataFrame([1.63, 1.65, 1.72, 1.75, np.NaN, 1.79, np.NaN, 1.80, 1.82])
+    mediana.median()
+    
+    #Incluindo os valores NaN, desabilitando a opção de pular
+    mediana.median(skipna=False)
+    
+    #Outra opção é substituir os valores NaN, neste caso substituimos por 0
+    mediana.fillna(0).median()
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="TextRight">
+                        <div class="ExercicieDF">
+                            <br><a><span class="tittleExercicieDF">Exercicio DataFrame</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Calcular a mediana do DataFrame
+
+    #Preenchendo os valores vazios por 0 e considerando apenas números
+    df.fillna(0).median(numeric_only=True)
+                                    </pre></code>
+                        </div>
+                    </div>
+
+                </div>
+
+               
+                <div class="Mean">
+                    <br><a><span class="tittleMean">Média</span></a></br>
+                    <br><a><span class="textMean"><li>Calculada somando-se todos os valores de um conjunto de dados e dividindo-se pelo número de elementos deste conjunto.</li></span></a></br>
+                    <div class="code-container">
+                        <pre><code>
+    #Utilizamos o método man para calcular a média
+
+    #skipna - pular espaços vazios;  numericonly - apenas numeros
+    df.mean(numeric_only=True, skipna=False)
+
+    #fillna - preencher os dados vazios com 0
+    df.fillna(0).mean(numericonly=True)
+                        </code></pre>
+                    </div>
+                    <div class="TextRight">
+                        <div class="Percentil">
+                            <br><a><span class="tittlePercentil">Percentil</span></a>
+                            <br><a><span class="textPercentil"><li>Divide a amostra (por ordem crescente) em 100 partes.</li></span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Utilizamos o método quantile para calcular o percentil
+    percentil = pd.DataFrame([21,23,31,46,54,64,78,89,97,99,105])
+    percentil.quantile(0.4)#Pegando 40%
+    percentil.quantile(0.45)#Pegando 45%, ele calcula o valor
+    
+    #A mesma coisa num mesmo comando
+    percentil.quantile([0.40,0.45])
+                                    </pre></code>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+    
+                    <div class="TextRight">
+                        <div class="Quantil">
+                            <br><a><span class="tittleQuantil">Quantil</span></a>
+                            <br><a><span class="textQuantil"><li>Mesma sistemática que o percentil, porém, serão utilizados 3 valores que dividem o conjunto em 4 partes iguais.</li></span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Utiliza três valores, que se dividem em 4 (25%, 50% e 75%)
+    percentil.quantile([0.25, 0.5, 0.75])
+    
+
+    #Utilizamos o método describe para obter uma visão geral das estatísticas do DataFrame
+    percentil.describe()
+
+    #Apresenta a visão geral e o valor conforme o percentual
+    percentil.describe(percentiles=[.1, .25, .3, .5, .75])
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="TextRight">
+                        <div class="ExercicieDF">
+                            <br><a><span class="tittleExercicieDF">Exercício DataFrame</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Exiba o percentil 30% e todos os quartils para cada coluna do DataFrame Titanic
+    df.quantile([0.25, 0.3, .5, .75], numeric_only=True)
+
+    #Utilizando o método describe(), exiba contagem média, desvio padrão, valor mínimo, valor máximo, percentil 10%, 30% e todos os quartils para cada coluna do DataFrame Titanic
+    df.describe(percentiles=[.1, .25, .3, .5, .75])   
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="DispersionMeasures">
+                <br><a><span class="tittleDispersionMeasures">Medidas de Dispersão</span></a></br>
+
+                <div class="Amplitude">
+                    <br><a><span class="tittleAmplitude">Amplitude</span></a></br>
+                    <br><a><span class="textMode"><li>Diferença entre a maior e a menor observação de um conjunto de dados.</li></span></a></br>
+                    <div class="TextRight">
+                        <div class="code-container">
+                            <pre><code>
+    amplitude = pd.DataFrame([4, 6, 79, 1, 64, 4, 33, 4, 9, 6, 4])
+    #Os métodos pegam o maior e o menor valor do DataFrame
+    A = amplitude.max()-amplitude.min()
+    print(A)
+                            </code></pre>
+                        </div>
+
+
+                    </div>
+
+                    <div class="TextRight">
+                        <div class="Exercicie">
+                            <br><a><span class="tittleExercicie">Exercício</span></a>
+                            <div class="TextRight">
+                                <br><a><span class="textExercicie"><li>O setor de controle de qualidade de uma empresa seleciona ao acaso peças de um lote. Quando a amplitude das medidas dos diâmetros das peças ultrapassa 0,8 cm o lote é rejeitado. Considerando que em um lote foram encontrados os seguintes valores 2,1 cm; 2,0 cm; 2,2 cm; 2,9 cm; 2,4 cm, esse lote foi aprovado ou rejeitado?</li></span></a>
+                                <div class="code-container">
+                                    <pre><code>
+    lote = pd.DataFrame([2.1, 2.0, 2.2, 2.9, 2.4])
+    #Ele armazena o resultado em um array precisando converter
+    if(a > 0.8):
+    a = float (lote.max()-lote.min()) 
+        print("Rejeitado",a)
+
+    else:
+        print("Aprovado",a)
+                                        
+                                        
+    #Forma Alternativa (mais atual)
+    lote = pd.DataFrame([2.1, 2.0, 2.2, 2.9, 2.4])
+    a = (lote.max()-lote.min())
+    #Compara com os valores calculados do array
+    if(a[0] > 0.8): 
+        print("Rejeitado",a)
+
+    else:
+        print("Aprovado",a)
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ExercicieDF">
+                            <br><a><span class="tittleExercicieDF">Exercício DataFrame</span></a>
+                            <div class="TextRight">
+                                <div class="code-container">
+                                    <pre><code>
+    #Aplique o cálculo de amplitude para cada coluna numérica do DataFrame Titanic
+    
+    for column in df.columns:
+    #Pega dados de tipo inteiro e float, para só calcular colunas que há números
+      if df[column].dtype == 'int64' or df[column].dtype == 'float64':
+        A = df[column].max() - df[column].min();
+        #Printa o nome da coluna e a sua amplitude
+        print(column, '=', A)
+                                    </pre></code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Variance">
+                    <br><a><span class="tittleVariance">Variância</span></a></br>
+                    <br><a><span class="textMode"><li>Média dos quadrados das diferenças entre cada uma das observações e a média aritmética da amostra.</li></span></a></br>
+                    <div class="TextRight">
+                        <div class="code-container">
+                            <pre><code>
+    #Utilizamos o método var para calcular a variância
+    predios = pd.DataFrame([460, 800, 300, 400])
+    predios.var()
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="F_left">
+            <span class="F_name">Melina Nogueira    2024 ©</span>
+        </div>
+        <div class="F_right">
+            <span class="git"><a href="https://github.com/ZKNs1" target=”_blank”>
+                <img src="github.png" style="width:40px; height:40px;" alt="GitHub">
+            </a></span>
+
+            <span class="linkedin"><a href="https://www.linkedin.com/in/melina-nogueira-844878273/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target=”_blank”>
+                <img src="linkedin.png" style="width:40px; height:40px;" alt="LinkedIn">
+            </a></span>
+        </div>
+    </footer>

@@ -1,0 +1,315 @@
+/* FONT */
+.Anotation, .Software, .exercicie {
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.tittleDataModeling, .tittleCommand {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+}
+
+.tittleData, .tittleBusinessModeling, .tittleConceptualModel, .tittleEX1, .tittleEX2, .tittleDiagramER {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.textGitHub, .textBan, .textSoftware, .textDiagramER {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.tittleStructuredData, .tittleUnstructuredData, .tittleSemiStructuredData, .tittleBusinessModeling, .tittleConceptualModel, .tittleDQL, .tittleDDL, .tittleDML, .tittleCrossJoin, .tittleComponents, .tittleDiagramEx {
+    font-family: 'Mukta', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.textStructuredData, .textUnstructuredData, .textSemiStructuredData, .textBusinessModeling, .textConceptualModel, .textComponents, .textDiagramEx {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+}
+
+/* BODY */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    width: calc(100% - 200px);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    z-index: 1000;
+    background: black;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+header .right-menu {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header .right-menu span {
+    margin-left: 20px;
+    white-space: nowrap;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    color: white;
+}
+
+/* MAIN */
+main {
+    padding-top: 75px;
+    flex: 1;
+    width: calc(100% - 200px);
+    margin-left: 100px;
+    background: rgb(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Another color for text */
+g {
+    color: rgb(6, 214, 75);
+}
+
+/* Text Config */
+.Anotation, .Data {
+    line-height: 20px;
+}
+
+.Data, .Exercicie{
+    margin-top: 30px;
+}
+
+.Command {
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.DataModeling, .Software, .DiagramER {
+    margin-top: 35px;
+    line-height: 15px;
+}
+
+.StructuredData, .UnstructuredData, .SemiStructuredData, .Components {
+    margin-left: 30px;
+}
+
+.BusinessModeling, .ConceptualModel {
+    margin-top: 15px;
+    margin-left: 30px;
+    line-height: 20px;
+}
+
+.textComponents{
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.tittleComponents, .tittleDiagramEx{
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+.DDL, .DQL, .DML, .CrossJoin{
+    margin-top: 15px;
+}
+
+.M_exercicie{
+    margin-top:30px;
+}
+
+.EX1, .EX2{
+    margin-top:10px;
+}
+
+.TextRight {
+    margin-left: 30px;
+}
+
+/* Code Container */
+.code-container {
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 300px;
+    margin-top: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #2e2e2e;
+}
+
+pre {
+    margin: 0;
+}
+
+code {
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #dcdcdc;
+}
+
+/* Footer */
+#footer {
+    width: calc(100% - 200px);
+    height: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    z-index: 1000;
+    background: rgb(0, 0, 0);
+    border-top: 1px solid white;
+    margin-top: 30px;
+    padding: 0 100px;
+    opacity: 0;
+    transition: 0.3s ease;
+    padding-top: 25px;
+}
+
+body.no-scroll {
+    margin-bottom: 20px;
+}
+
+footer .F_left, .F_right {
+    display: flex;
+    align-items: center;
+}
+
+footer .F_right a {
+    margin-left: 20px;
+    white-space: nowrap;
+    color: white;
+}
+
+.F_name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 17px;
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+/* Toggle List */
+.commandDDL, .commandDML, .commandDQL {
+    background-color: #242424;
+    color: #515050;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Inconsolata', monospace;
+    margin-top: 15px;
+}
+
+.active, .commandDDL:hover, .commandDML:hover, .commandDQL:hover {
+    background-color: #e2e6ea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contentDDL, .contentDML, .contentDQL {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    margin-top: -10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    max-height: 0;
+    color: #e2e6ea;
+    font-family: 'Merriweather', serif;
+    font-weight: 10px;
+}
+
+.contentDDL.show, .contentDML.show, .contentDQL.show {
+    padding: 18px;
+    max-height: 500px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    margin-left: 15px;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.image-container .textDiagramEx {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    font-family: "Courier New", Courier, monospace;
+    flex: 2; /* Ajustar conforme necessário */
+    overflow-y: auto;
+    height: 241px;
+    min-width: 200px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        font-size: 16px;
+    }
+    .name {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        font-size: 14px;
+    }
+    .name {
+        font-size: 20px;
+    }
+
+}
